@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Union - Attractions</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: white;
+        background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                    url("https://i.imgur.com/zIbHdpc.png") center/cover no-repeat fixed;
+    }
+
+    .navbar {
+        background-color: rgba(44, 62, 80, 0.85);
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .nav-links a:hover {
+        color: #3498db;
+    }
+
+    /* CONTENT AREA */
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 80px;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .left h1 {
+        font-size: 65px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .line {
+        width: 300px;
+        height: 3px;
+        background: white;
+        margin-bottom: 25px;
+    }
+
+    .left ul {
+        list-style: disc;
+        margin-left: 20px;
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .right {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media(max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .left, .right {
+            width: 100%;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">LA UNION</div>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="attractions.html">ATTRACTIONS</a></li>
+        <li><a href="festivals.html">FESTIVALS</a></li>
+        <li><a href="food.html">FOOD</a></li>
+        <li><a href="authors.html">AUTHORS</a></li>
+    </ul>
+</div>
+
+<div class="wrapper">
+    <div class="left">
+        <h1>ATTRACTIONS</h1>
+        <div class="line"></div>
+
+        <ul>
+            <li>San Juan Surf Beach – Best surfing spot, chill vibe</li>
+            <li>Baluarte Watchtower – Historic tower by the shore</li>
+            <li>Ma-Cho Temple – Scenic Taoist temple open to the public</li>
+        </ul>
+    </div>
+
+   <div class="right" style="width:65%; display:flex; flex-direction:column; gap:25px; padding:10px;">
+    <img src="https://legendarysurfcamps.com/wp-content/uploads/2023/06/surf-la-union.jpg" alt="San Juan Surf Beach" style="width:100%; height:320px; object-fit:cover;">
+    <img src="https://i0.wp.com/jayexiomo.com/wp-content/uploads/2023/11/baluarte-watch-tower-cover.jpeg" alt="Baluarte Watchtower" style="width:100%; height:320px; object-fit:cover;">
+    <img src="https://i0.wp.com/bosestiamianan.com/wp-content/uploads/2022/04/Screenshot-2022-04-17-221215.jpg" alt="Ma-Cho Temple" style="width:100%; height:320px; object-fit:cover;">
+</div>
+
+</div>
+
+</body>
+</html>
